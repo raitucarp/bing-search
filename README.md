@@ -42,8 +42,10 @@ func main() {
     fmt.Println(info)
 }
 ```
+# Usage
+type Options is required when doing WebSearch
 
-# Options
+## Options
 ```
 type Options struct {
     Query string
@@ -52,11 +54,11 @@ type Options struct {
 }
 ```
 
-# WebSearch(options *bing.Options) (results []Item, ok bool)
+## WebSearch(options *bing.Options) (results []Item, ok bool)
 
 Get search results with bing web search
 
-# URLInfo(url string, withTor bool) (info Item, ok bool)
+## URLInfo(url string, withTor bool) (info Item, ok bool)
 
 Get single url Info
 
