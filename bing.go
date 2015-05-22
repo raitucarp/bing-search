@@ -10,10 +10,10 @@ import (
 )
 
 type Item struct {
-    Title       string `xml:"title"`
-    Description string `xml:"description"`
-    Link        string `xml:"link"`
-    PubDate     string `xml:"pubDate"`
+    Title       string `xml:"title" json:"title"`
+    Description string `xml:"description"  json:"description"`
+    Link        string `xml:"link"  json:"link"`
+    PubDate     string `xml:"pubDate  json:"pubdate"`
 }
 
 type SearchResult struct {
