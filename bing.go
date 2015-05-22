@@ -13,7 +13,7 @@ type Item struct {
     Title       string `xml:"title" json:"title"`
     Description string `xml:"description"  json:"description"`
     Link        string `xml:"link"  json:"link"`
-    PubDate     string `xml:"pubDate  json:"pubdate"`
+    PubDate     string `xml:"pubDate"  json:"pubDate"`
 }
 
 type SearchResult struct {
