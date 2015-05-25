@@ -1,0 +1,10 @@
+{
+	"ImportPath": "github.com/raitucarp/bing-search",
+	"GoVersion": "go1.4.2",
+	"Deps": [
+		{
+			"ImportPath": "h12.me/socks",
+			"Rev": "c19db44edd3ca0f7992809b55412dbb57805bc8e"
+		}
+	]
+}
