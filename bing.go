@@ -53,7 +53,18 @@ func getHeader(item *Item, done chan bool, wg *sync.WaitGroup) {
 // get header method for each Item
 func (item *Item) GetHeader() {
 	client := &http.Client{}
-	resp, err := client.Head(item.Link)
+	req, err := http.NewRequest("HEAD", item.Link, nil)
+	// set user agent
+	req.Header.Set("User-Agent", globalUa)
+
+	// set referer
+	req.Header.Set("Referer", "http://www.google.com/")
+	if err != nil {
+		return
+	}
+
+	// do head request
+	resp, err := client.Do(req)
 
 	if err == nil {
 		header := make(map[string]string)
