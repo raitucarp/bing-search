@@ -32,7 +32,7 @@ func TestURLInfo(t *testing.T) {
 		// keyword test
 		{"http://wikipedia.org", false},
 		{"http://techcrunch.com/2015/05/12/the-ultimate-interface-is-your-brain/", false},
-		{"http://facebook", true},
+		{"http://facebook.com", true},
 	}
 	for _, options := range cases {
 		info, ok := URLInfo(options.url, options.tor)
